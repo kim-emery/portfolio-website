@@ -1,9 +1,35 @@
 h1, h2, p{
-    
-    font-family: 'Droid Serif', serif;
+
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
-  
+
+h1{
+  font-size: 2em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* not the best way to have spacing - but used for quick visual comparison, change the margin-b-e next time */
+h2{
+  font-weight: 300;
+  font-size:1em;
+  color: #e5601d;
+  margin-block-end: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+
+}
+p{
+  font-size: 0.9em;
+  text-align: left;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
 
 #highlight{
     color:#7a2847;
@@ -20,20 +46,26 @@ h1, h2, p{
 /* Media Query Breakpoints*/
 /* detect not a mobile - i.e. desktop */
 @media only screen and (min-width: 768px){
-  
 
-body{
-  width: 100%;
-}
+  h1{
+    font-size: 6em;
+  }
+  h2{
+    font-size: 2em;
+  }
 
-.outerBoxSection{
-  width: 80%;
-  margin-left: auto;
-  margin-right:auto;
-  
-}
-
-.topHeaderSection{
+  body{
     width: 100%;
+  }
+
+  .outerBoxSection{
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+
+  }
+
+  .topHeaderSection{
+      width: 100%;
   }
 }
